@@ -1,0 +1,30 @@
+<section class="section" id="about">
+  <div class="container two-column">
+    <div>
+      <p class="section-kicker">Scientific scope</p>
+      <h2>About the workshop</h2>
+    </div>
+    <div class="prose">
+      <p class="lead">
+        Quantum information has become a common language across quantum physics.
+        This workshop brings together a small group of invited speakers to identify
+        concrete points of contact between information-theoretic concepts and the
+        dynamics, structure, and experimental characterization of quantum systems.
+      </p>
+      <p>
+        The format is intentionally compact and discussion-oriented. Alongside invited
+        talks, the programme leaves ample room for questions, informal exchanges, and
+        the development of new collaborations across disciplinary boundaries.
+      </p>
+    </div>
+  </div>
+
+  <div class="container topics-panel">
+    <h3>Topics</h3>
+    <ul class="topic-list">
+      {% for topic in site.data.topics %}
+      <li>{{ topic }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

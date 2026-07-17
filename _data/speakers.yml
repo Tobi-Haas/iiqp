@@ -1,0 +1,29 @@
+- name: "Alice Example"
+  affiliation: "Institute for Theoretical Physics, Example University"
+  topic: "Entanglement structures in quantum field theory"
+  url: "#"
+
+- name: "Benjamin Example"
+  affiliation: "Quantum Optics Laboratory, Example Institute"
+  topic: "Photonic quantum simulation of many-body dynamics"
+  url: "#"
+
+- name: "Clara Example"
+  affiliation: "Department of Physics, Example University"
+  topic: "Information spreading far from equilibrium"
+  url: "#"
+
+- name: "David Example"
+  affiliation: "Center for Quantum Science, Example Institute"
+  topic: "Operational probes of quantum correlations"
+  url: "#"
+
+- name: "Elena Example"
+  affiliation: "Institute for Quantum Matter, Example University"
+  topic: "Quantum resources in complex systems"
+  url: "#"
+
+- name: "Farid Example"
+  affiliation: "Quantum Technologies Group, Example Laboratory"
+  topic: "Certification and tomography in continuous variables"
+  url: "#"

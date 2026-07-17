@@ -1,0 +1,25 @@
+<section class="hero">
+  <div class="hero-noise" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Invited workshop · {{ site.workshop.city }}</p>
+      <h1>{{ site.title }}</h1>
+      <p class="hero-lead">
+        A focused meeting connecting foundational ideas from quantum information
+        with current problems in quantum many-body physics, field theory, and experiment.
+      </p>
+      <div class="hero-meta" aria-label="Workshop details">
+        <div><span class="meta-label">Date</span><strong>{{ site.workshop.dates }}</strong></div>
+        <div><span class="meta-label">Venue</span><strong>{{ site.workshop.venue }}</strong></div>
+      </div>
+      <div class="hero-actions">
+        <a class="button" href="#schedule">View preliminary schedule</a>
+        <a class="text-link" href="#venue">Practical information <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <img src="{{ '/assets/images/hero-placeholder.svg' | relative_url }}" alt="Placeholder illustration for the workshop">
+      <figcaption>Replace <code>assets/images/hero-placeholder.svg</code> with your workshop figure.</figcaption>
+    </figure>
+  </div>
+</section>

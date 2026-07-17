@@ -1,0 +1,25 @@
+<section class="section section-dark" id="venue">
+  <div class="container venue-grid">
+    <div>
+      <p class="section-kicker">Practical information</p>
+      <h2>When and where</h2>
+      <p class="venue-intro">The workshop will take place on the campus of Ulm University. Detailed travel and access information can be added once the room booking is final.</p>
+    </div>
+    <dl class="details-card">
+      <div><dt>Date</dt><dd>{{ site.workshop.dates }}</dd></div>
+      <div><dt>Venue</dt><dd>{{ site.workshop.venue }}</dd></div>
+      <div><dt>Room</dt><dd>{{ site.workshop.room }}</dd></div>
+      <div><dt>City</dt><dd>{{ site.workshop.city }}</dd></div>
+      <div><dt>Contact</dt><dd><a href="mailto:{{ site.workshop.contact_email }}">{{ site.workshop.contact_email }}</a></dd></div>
+    </dl>
+  </div>
+
+  <div class="container registration-panel" id="registration">
+    <div>
+      <p class="section-kicker">Participation</p>
+      <h3>Registration</h3>
+      <p>Insert your Google Forms registration link in <code>_config.yml</code>. You can also replace this text with a registration deadline or attendance policy.</p>
+    </div>
+    <a class="button button-light" href="{{ site.workshop.registration_url }}">Register for the workshop</a>
+  </div>
+</section>

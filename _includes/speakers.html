@@ -1,0 +1,23 @@
+<section class="section section-tinted" id="speakers">
+  <div class="container section-heading">
+    <div>
+      <p class="section-kicker">Invited participants</p>
+      <h2>Speakers</h2>
+    </div>
+    <p>All scientific contributions are invited. The list below can be edited in <code>_data/speakers.yml</code>.</p>
+  </div>
+
+  <div class="container speaker-grid">
+    {% for speaker in site.data.speakers %}
+    <article class="speaker-card">
+      <div class="speaker-initial" aria-hidden="true">{{ speaker.name | slice: 0 }}</div>
+      <div>
+        <h3>{{ speaker.name }}</h3>
+        <p class="speaker-affiliation">{{ speaker.affiliation }}</p>
+        {% if speaker.topic %}<p class="speaker-topic">{{ speaker.topic }}</p>{% endif %}
+        {% if speaker.url %}<a class="card-link" href="{{ speaker.url }}">Profile <span aria-hidden="true">↗</span></a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>

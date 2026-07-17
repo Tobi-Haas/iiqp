@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>{{ site.title }}</strong>
+      <p>{{ site.workshop.dates }} · {{ site.workshop.city }}</p>
+    </div>
+    <div>
+      <span>Organized by</span>
+      {% for organizer in site.organizers %}
+      <p>{{ organizer.name }} · {{ organizer.affiliation }}</p>
+      {% endfor %}
+    </div>
+    <a class="back-to-top" href="#top">Back to top ↑</a>
+  </div>
+</footer>

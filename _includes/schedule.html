@@ -1,0 +1,43 @@
+<section class="section" id="schedule">
+  <div class="container section-heading">
+    <div>
+      <p class="section-kicker">Programme</p>
+      <h2>Preliminary schedule</h2>
+    </div>
+    <p>The timetable is generated from <code>_data/schedule.yml</code>. Times and contributions can be changed without editing HTML.</p>
+  </div>
+
+  <div class="container schedule-shell">
+    <div class="day-tabs" role="tablist" aria-label="Workshop days">
+      {% for day in site.data.schedule %}
+      <button class="day-tab{% if forloop.first %} is-active{% endif %}" type="button" role="tab"
+        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+        aria-controls="schedule-day-{{ forloop.index }}" id="tab-day-{{ forloop.index }}"
+        data-schedule-tab="{{ forloop.index }}">
+        <span>{{ day.label }}</span>
+        <small>{{ day.date }}</small>
+      </button>
+      {% endfor %}
+    </div>
+
+    {% for day in site.data.schedule %}
+    <div class="schedule-day{% unless forloop.first %} is-hidden{% endunless %}" id="schedule-day-{{ forloop.index }}"
+      role="tabpanel" aria-labelledby="tab-day-{{ forloop.index }}" data-schedule-panel="{{ forloop.index }}">
+      {% for item in day.items %}
+      <article class="schedule-item schedule-item--{{ item.type | default: 'talk' }}">
+        <time>{{ item.time }}</time>
+        <div class="schedule-content">
+          <div class="schedule-topline">
+            <h3>{{ item.title }}</h3>
+            {% if item.duration %}<span class="duration">{{ item.duration }}</span>{% endif %}
+          </div>
+          {% if item.speaker %}<p class="schedule-speaker">{{ item.speaker }}{% if item.affiliation %} · {{ item.affiliation }}{% endif %}</p>{% endif %}
+          {% if item.note %}<p class="schedule-note">{{ item.note }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% endfor %}
+    <p class="schedule-disclaimer">The schedule is preliminary and may change.</p>
+  </div>
+</section>

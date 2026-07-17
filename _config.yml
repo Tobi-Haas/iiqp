@@ -3,8 +3,8 @@ short_title: "QI × QP Workshop"
 description: >-
   A small invited workshop bringing together researchers working at the interface
   of quantum information, quantum many-body physics, quantum field theory, and quantum technologies.
-url: "https://tobi-haas.github.io"
-baseurl: "/iiqp"
+url: "https://YOUR-USERNAME.github.io"
+baseurl: "/quantum-workshop"
 lang: "en"
 timezone: "Europe/Berlin"
 
@@ -13,7 +13,6 @@ workshop:
   city: "Ulm, Germany"
   venue: "Center for Quantum BioSciences, Ulm University"
   room: "Seminar Room, 2nd floor"
-  registration_url: "#registration"
   contact_email: "organizers@example.org"
 
 organizers:

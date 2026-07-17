@@ -8,7 +8,7 @@ The main settings are in `_config.yml`:
 
 - workshop title and short title;
 - date, venue, room, city, and contact address;
-- registration URL;
+- contact email;
 - GitHub Pages `url` and `baseurl`.
 
 Edit the structured content here:
@@ -48,16 +48,6 @@ baseurl: "/quantum-workshop"
 
 For a user or organization site named `YOUR-USERNAME.github.io`, set `baseurl: ""`.
 
-## Registration
-
-Replace this value in `_config.yml`:
-
-```yaml
-registration_url: "https://forms.gle/YOUR-FORM"
-```
-
-The registration buttons then link to your Google Form automatically.
-
 ## Design customization
 
 Colors and dimensions are defined at the beginning of `assets/css/main.css` as CSS variables. The main palette is:
@@ -70,3 +60,8 @@ Colors and dimensions are defined at the beginning of `assets/css/main.css` as C
 ## License
 
 You may freely adapt this website for your academic workshop.
+
+
+## Expandable talk abstracts
+
+Add an optional `abstract:` field to any contribution in `_data/schedule.yml`. The contribution then becomes clickable and expands in place.

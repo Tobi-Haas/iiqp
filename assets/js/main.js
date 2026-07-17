@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const tabs = [...document.querySelectorAll("[data-schedule-tab]")];
   const panels = [...document.querySelectorAll("[data-schedule-panel]")];
-
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       const selected = tab.dataset.scheduleTab;
@@ -29,6 +28,25 @@ document.addEventListener("DOMContentLoaded", () => {
       panels.forEach((panel) => {
         panel.classList.toggle("is-hidden", panel.dataset.schedulePanel !== selected);
       });
+    });
+  });
+
+  document.querySelectorAll(".schedule-toggle").forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = document.getElementById(button.getAttribute("aria-controls"));
+      if (!target) return;
+      const expanded = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!expanded));
+      target.hidden = expanded;
+      button.closest(".schedule-item")?.classList.toggle("is-expanded", !expanded);
+    });
+  });
+
+  document.querySelectorAll('a[href="#top"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
     });
   });
 });

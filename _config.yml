@@ -1,25 +1,8 @@
-title: "Quantum Information Meets Quantum Physics"
-short_title: "QI × QP Workshop"
-description: >-
-  A small invited workshop bringing together researchers working at the interface
-  of quantum information, quantum many-body physics, quantum field theory, and quantum technologies.
+title: "Information in Quantum Physics"
 url: "https://tobi-haas.github.io"
 baseurl: "/iiqp"
 lang: "en"
 timezone: "Europe/Berlin"
-
-workshop:
-  dates: "15–17 September 2027"
-  city: "Ulm, Germany"
-  venue: "Center for Quantum BioSciences, Ulm University"
-  room: "Seminar Room, 2nd floor"
-  contact_email: "organizers@example.org"
-
-organizers:
-  - name: "Organizer One"
-    affiliation: "Ulm University"
-  - name: "Organizer Two"
-    affiliation: "Partner Institution"
 
 markdown: kramdown
 permalink: pretty

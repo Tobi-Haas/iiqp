@@ -3,6 +3,7 @@ url: "https://tobi-haas.github.io"
 baseurl: "/iiqp"
 lang: "en"
 timezone: "Europe/Berlin"
+registration_url: "#" # Replace with the registration form URL
 
 markdown: kramdown
 permalink: pretty

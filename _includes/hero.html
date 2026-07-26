@@ -2,19 +2,20 @@
   <div class="hero-noise" aria-hidden="true"></div>
   <div class="container hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">Invited workshop · Ulm, Germany</p>
+      <p class="eyebrow">Workshop · Ulm, Germany</p>
       <h1>Information in Quantum Physics</h1>
       <p class="hero-lead">
-        An interdisciplinary meeting connecting foundational ideas from quantum information
-        with current advances in quantum many-body physics and experiments.
+        An interdisciplinary meeting connecting theoretical ideas from quantum information
+        with current advances in quantum many-body experiments.
       </p>
       <div class="hero-meta" aria-label="Workshop details">
-        <div><span class="meta-label">Date</span><strong>March, 2027</strong></div>
-        <div><span class="meta-label">Venue</span><strong><a href="https://www.uni-ulm.de/nawi/institut-fuer-theoretische-physik-start-page/" target="_blank">Institute for Theoretical Physics, Ulm University</a></strong></div>
+        <div><span class="meta-label">Date</span><strong>Spring 2027</strong></div>
+        <div><span class="meta-label">Venue</span><strong><a href="https://www.uni-ulm.de/nawi/institut-fuer-theoretische-physik-start-page/" target="_blank" rel="noopener">Institute for Theoretical Physics, Ulm University</a></strong></div>
       </div>
       <div class="hero-actions">
-        <a class="button" href="#schedule">View schedule</a>
-        <a class="text-link" href="#venue">Practical info<span aria-hidden="true">→</span></a>
+        <a class="button" href="{{ site.registration_url }}"{% if site.registration_url contains '://' %} target="_blank" rel="noopener"{% endif %}>Register</a>
+        <a class="text-link" href="#schedule">View schedule <span aria-hidden="true">→</span></a>
+        <a class="text-link" href="#venue">Info <span aria-hidden="true">→</span></a>
       </div>
     </div>
     <figure class="hero-figure">

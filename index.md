@@ -7,3 +7,4 @@ layout: default
 {% include speakers.html %}
 {% include schedule.html %}
 {% include venue.html %}
+{% include funders.html %}

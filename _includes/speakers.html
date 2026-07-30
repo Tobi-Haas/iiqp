@@ -11,7 +11,7 @@
     <article class="speaker-card">
       <div class="speaker-initial" aria-hidden="true">{{ speaker.name | slice: 0 }}</div>
       <div>
-        <h3>{% if speaker.url %}<a href="{{ speaker.url }}">{{ speaker.name }}</a>{% else %}{{ speaker.name }}{% endif %}</h3>
+        <h3>{% if speaker.url %}<a href="{{ speaker.url }}" target="_blank">{{ speaker.name }}</a>{% else %}{{ speaker.name }}{% endif %}</h3>
         <p class="speaker-affiliation">{{ speaker.affiliation }}</p>
         {% if speaker.topic %}<p class="speaker-topic">{{ speaker.topic }}</p>{% endif %}
       </div>

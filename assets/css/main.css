@@ -70,8 +70,25 @@ main .section-dark a:not(.button):focus-visible {
 .funders{padding:2.15rem 0;background:var(--paper);border-top:1px solid var(--line)}
 .funders-inner{display:flex;align-items:center;gap:1rem}
 .funders-label{flex:0 0 auto;margin:0;color:var(--ink-soft);font-size:.7rem;font-weight:800;letter-spacing:.12em;line-height:1.3;text-transform:uppercase;white-space:nowrap}
-.funder-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;justify-items:center;width:100%;min-width:0;column-gap:0}
-.funder-link{display:flex;align-items:center;justify-content:center;width:100%;min-width:0;padding:0;color:inherit;text-decoration:none;opacity:.82;transition:opacity .2s,transform .2s}
+.funder-list{
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  width:100%;
+  min-width:0;
+}
+.funder-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 1 270px;
+  min-width:0;
+  padding:0;
+  color:inherit;
+  text-decoration:none;
+  opacity:.82;
+  transition:opacity .2s,transform .2s;
+}
 .funder-link:hover,.funder-link:focus-visible{color:inherit;text-decoration:none;opacity:1;transform:translateY(-1px)}
 .funder-link img{display:block;width:auto;height:auto;max-width:min(98%,270px);max-height:86px;object-fit:contain}
 
@@ -83,7 +100,10 @@ main .section-dark a:not(.button):focus-visible {
   .funders{padding:1.65rem 0}
   .funders-inner{gap:.5rem}
   .funders-label{font-size:.62rem}
-  .funder-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .funder-list{
+  display:flex;
+  justify-content:space-evenly;
+}
   .funder-link{padding:0}
   .funder-link img{max-width:98%;max-height:70px}
 }

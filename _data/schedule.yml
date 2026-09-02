@@ -13,7 +13,7 @@
     - time: "13:30"
       title: "Talk 1.A"
       speaker: "Speaker 1.A"
-      duration: "30 mins"
+      duration: "30 min"
       abstract: "Abstract 1.A"
     - time: "14:00"
       title: "Talk 1.B"

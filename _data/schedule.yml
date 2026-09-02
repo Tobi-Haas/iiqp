@@ -1,5 +1,5 @@
 - label: "Day 1"
-  date: "Tuesday"
+  date: "April 20, Tuesday"
   items:
     - time: "12:00"
       title: "Welcome &amp; opening remarks"
@@ -36,7 +36,7 @@
       abstract: "Abstracts"
 
 - label: "Day 2"
-  date: "Wednesday"
+  date: "April 21, Wednesday"
   items:
     - time: "09:00"
       title: "Talk 2.A"
@@ -104,7 +104,7 @@
       note: "Location to be announced."
       
 - label: "Day 3"
-  date: "Thursday"
+  date: "April 22, Thursday"
   items:
     - time: "09:00"
       title: "Talk 5.A"
@@ -170,7 +170,7 @@
       abstract: "Abstracts"
 
 - label: "Day 4"
-  date: "Friday"
+  date: "April 23, Friday"
   items:
     - time: "09:00"
       title: "Talk 8.A"
